@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
             if (check) { 
                 res.end('Hello')
             }else{
-                res.end(html)
+                res.end("กรุณาใสรหัสให้ถูกต้อง")
             }
         }
     }
