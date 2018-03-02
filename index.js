@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
             if (check) { 
                 res.end('Hello')
             }else{
-                res.end("กรุณาใสรหัสให้ถูกต้อง")
+                res.end(html)
             }
         }
     }
@@ -56,7 +56,8 @@ app.get('/login', (req, res) => {
         if (val) {
             res.end("True")
         } else {
-            res.end(html)
+            
+            res.end("กรุณาใสรหัสให้ถูกต้อง")
         }
     }
     console.log('email:' + loginVal.username, 'pass:' + loginVal.password)
